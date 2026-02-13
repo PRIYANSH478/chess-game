@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parentContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(98, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chessContainer{
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+}
+.chessBox{
+    background-color: #3d2b1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.chessBox>img{
+    width: 60px;
+    height: 60px;
+}
+.nextSelected{
+border: 4px solid rgb(7, 60, 235);
+}
+
+@media (max-width: 400px) {
+    .chessBox > img {
+        width: 90%;
+        height: 90%;
+    }
+}
